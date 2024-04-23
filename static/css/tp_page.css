@@ -1,0 +1,68 @@
+
+    .navbar {
+        background-color: #333;
+        overflow: hidden;
+    }
+
+    /* 导航栏中的链接样式 */
+    .navbar a {
+
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    /* 链接悬停时的样式 */
+    .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    .photo-left {
+        float: left;
+    }
+    .center
+    {
+	    text-align:center;
+        line-height: 0.25;
+    }
+
+
+    /* 左侧栏的宽度 */
+    .column.side-left {
+      width: 50%; /* 或者其他您希望的宽度 */
+    }
+
+    /* 右侧栏的宽度 */
+    .column.side-right {
+      width: 50%; /* 或者其他您希望的宽度，确保和左侧栏的总和不超过100% */
+    }
+
+    /* 响应式布局 - 宽度小于600px时设置上下布局 */
+    @media screen and (max-width: 600px) {
+      .column.side-left, .column.side-right {
+        width: 100%;
+        float: none; /* 移除浮动，以确保元素堆叠 */
+      }
+    }
+    table {
+    border-collapse: collapse;
+    }
+
+    table, td, th {
+        border: 1px solid black;
+    }
+.container {
+    display: flex;
+    /* 如果需要确保子元素不换行，可以添加以下属性 */
+    flex-wrap: nowrap; /* 防止子元素换行 */
+}
+
+.container > * { /* 选择 .container 的直接子元素 */
+    flex: 1; /* 强制子元素等宽并填满容器的宽度 */
+    /* 根据需要，您可能还想设置最小宽度或最大宽度 */
+    /* min-width: 0; /* 在某些情况下，设置 min-width 为 0 可以帮助防止子元素不平均分配空间 */
+    /* max-width: 100%; /* 确保子元素不会超出其容器的宽度 */
+}
