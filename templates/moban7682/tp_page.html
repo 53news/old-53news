@@ -4,20 +4,67 @@
     <meta charset="UTF-8">
     <title>五三在线-导航页</title>
     <style>
+/* styles.css */  
+  
+body {  
+    margin: 0;  
+    padding: 0;  
+    font-family: Arial, sans-serif;  
+}  
+  
+header {  
+    background-color: #f8f9fa; /* 你可以自定义背景色 */  
+    padding: 10px;  
+}  
+  
+.navbar {  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+    padding: 10px;  
+}  
+  
+.navbar img {  
+    height: 30px; /* 自定义Logo图片的高度 */  
+}  
+  
+.navbar a {  
+    text-decoration: none;  
+    color: #333;  
+    margin-right: 15px; /* 调整链接之间的间距 */  
+}  
+  
+.center {  
+    text-align: center;  
+}  
+  
 .container {  
     display: flex;  
-    justify-content: space-between; /* 列之间平均分配空间 */  
 }  
   
-.side-left, .middle, .side-right {  
-    flex: 1; /* 每列都占据相同的空间 */  
-    margin: 10px; /* 可以根据需要添加间距 */  
+.side-left, .side-right {  
+    flex: 1; /* 使得左右两侧都占据相同的空间 */  
+    padding: 10px;  
 }  
   
-.photo-left {  
-    width: 100%; /* 图片宽度设置为100%，以适应列宽 */  
-    height: auto; /* 图片高度自动，以保持比例 */  
-}
+.side-left img {  
+    width: 100%; /* 图片宽度100%以适应容器 */  
+    height: auto; /* 图片高度自动以保持比例 */  
+    margin-bottom: 10px; /* 图片下方添加一些间距 */  
+}  
+  
+.side-left a {  
+    text-decoration: none;  
+    color: #333;  
+    display: block;  
+    margin-bottom: 5px; /* 调整链接之间的间距 */  
+}  
+  
+.side-right {  
+    background-color: #f8f9fa; /* 你可以自定义背景色 */  
+}  
+  
+/* 其他你需要的样式... */
     </style>
 
 
